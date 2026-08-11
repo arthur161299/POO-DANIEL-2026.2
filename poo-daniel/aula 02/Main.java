@@ -5,9 +5,13 @@ public class Main {
         p.idade = 18;
         p.nome = "ola";
         p.distancia = 20;
-        
-        p.andar();
-        System.err.println(" andou");
+     
+        Circulo c = new Circulo(2.5);
+        c.area();
+        c.comprimento();
+
+       // p.andar();
+       // System.err.println(" andou");
     }
     
 
