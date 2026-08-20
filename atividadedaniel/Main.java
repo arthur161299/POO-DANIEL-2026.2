@@ -1,4 +1,5 @@
- public class Main{
+
+public class Main{
 
     public static void main(String[] args) {
         
@@ -11,6 +12,15 @@
         System.out.println(f2.titulo);
         System.out.println(f2.genero);
         System.out.println(f2.titulo);
-    
+
+        Autor a = new Autor("Geroge Orwell", "Britânico");
+        Livro liv = new Livro("1984", 1945, a);
+
+        Autor a2 = new Autor("Machado de Assis","Brasileira");
+        Livro liv2 = new Livro("Dom Casmurro",1984,a2);
+
+        System.out.println(liv);
+        System.out.println(liv2);
+                         
     }
 }
