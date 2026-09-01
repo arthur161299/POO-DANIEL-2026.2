@@ -1,5 +1,5 @@
 public class App{
-    // public static void main(String[] args){
+     public static void main(String[] args){
        
         
         Endereco endereco = new Endereco("Rua Motocolombó", "Nº 987", "Afogados", "Recife", "PE");
