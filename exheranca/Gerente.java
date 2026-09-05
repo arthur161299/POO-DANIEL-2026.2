@@ -17,9 +17,12 @@ public class Gerente extends Funcionario {
         departamento = depart;
     }
 
-
-
-
-    
+    @Override
+    public String toString() {
+    return "Nome: " + super.getNome() +
+           ", Departamento Pessoa " + getDepartamento();
+           
+    }
+  
     
 }

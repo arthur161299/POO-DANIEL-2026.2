@@ -17,6 +17,11 @@ public class Desenvolvedor extends Funcionario {
         linguagemPrincipal = ling;
     }
 
-
+    @Override
+    public String toString() {
+    return "Nome: " + super.getNome() +
+           ", Linguagem Principal " + getLiguagemPrincipal();
+           
+    }
     
 }

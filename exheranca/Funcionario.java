@@ -33,4 +33,11 @@ public class Funcionario {
     public void setSalario(double sal){
         salario = sal;
     }
+
+    @Override
+    public String toString() {
+    return "Nome: " + getNome() +
+           ", Cpf: " + getCpf() +
+           ", Salario: " + getSalario();
+    }
 }
