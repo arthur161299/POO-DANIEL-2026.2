@@ -5,7 +5,7 @@ public class Zoologico {
 
     public boolean adicionarAnimal(Animal animal){
         for(Animal a : animais){
-            if(a.getId()== animal.getId()){
+            if(a.getId() == animal.getId()){
                 return false;
             }
         }
