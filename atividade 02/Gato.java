@@ -1,15 +1,13 @@
-public class Gato extends Animal { 
+public class Gato extends Animal {
 
-    Gato(long id,String nome, int idade, double peso ){
+    public Gato(long id, String nome, int idade, double peso) {
         super(id, nome, idade, peso);
 
         getHabilidades().add("agilidade");
     }
 
     @Override
-    public String emitirSom(){
-        return "Miao";
-
+    public String emitirSom() {
+        return "miau";
     }
-    
 }

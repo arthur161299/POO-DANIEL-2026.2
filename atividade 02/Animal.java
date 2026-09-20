@@ -1,65 +1,51 @@
 import java.util.ArrayList;
 
-public class Animal{
+public class Animal {
+
     private long id;
     private String nome;
     private int idade;
     private double peso;
     private ArrayList<String> habilidades;
-    
 
+    public Animal(long id, String nome, int idade, double peso) {
+        this.id = id;
+        this.nome = nome;
+        this.idade = idade;
+        this.peso = peso;
+        this.habilidades = new ArrayList<>();
+    }
 
-Animal(long id, String nome, int idade, double peso){
-    this.id = id;
-    this.nome = nome;
-    this. idade = idade;
-    this.peso = peso;
-    this.habilidades = new ArrayList<>();
-}
-public long getId(){
-    return id;
+    public long getId() {
+        return id;
+    }
 
-}
-public void setId(long id){
-    this.id = id;
-}
+    public String getNome() {
+        return nome;
+    }
 
-public String getNome(){
-    return nome;
-}
+    public int getIdade() {
+        return idade;
+    }
 
-public void setNome(String n){
-    this.nome = n;
-}
+    public double getPeso() {
+        return peso;
+    }
 
-public int getIdade(){
-    return idade;
-}
+    public ArrayList<String> getHabilidades() {
+        return habilidades;
+    }
 
-public void setIdade(int i){
-    this.idade = i;
-}
+    public String emitirSom() {
+        return "som desconhecido";
+    }
 
-public double getPeso(){
-    return peso;
-}
+    public String realizarHabilidade(String habilidade) {
 
-public void setPeso(double p){
-    this.peso = p;
-}
+        if (habilidades.contains(habilidade)) {
+            return nome + " consegue " + habilidade;
+        }
 
-public ArrayList<String>getHabilidades(){
-    return habilidades;
-}
-
-public void setHabilidades(ArrayList<String>habilidades){
-    this.habilidades = habilidades;
-}
-
-public String emitirSom(){
-    return "som desconhecido";
-}
-
-
-
+        return nome + " não consegue " + habilidade;
+    }
 }
